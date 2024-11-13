@@ -24,7 +24,7 @@
         <!-- Sección Contacto -->
         <section id="contacto" class="pb-4">
             <h2 class="h4">Contacto</h2>
-            <p class="lead">Puedes contactarme a través de <a href="mailto:tu-email@example.com" class="text-primary">alba.zaplana9@gmail.com</a>.</p>
+            <p class="lead">Puedes contactarme a través de <a href="" class="text-primary">alba.zaplana9@gmail.com</a>.</p>
         </section>
         
         <!-- Barra de búsqueda -->
@@ -37,58 +37,25 @@
             <select id="sortOptions" class="form-select w-auto " onchange="sortArticles()">
                 <option value="dateDesc">Más recientes primero</option>
                 <option value="dateAsc">Más antiguos primero</option>
-                <option value="sourceAsc">Fuente (A-Z)</option>
-                <option value="sourceDesc">Fuente (Z-A)</option>
             </select>
 
             <label for="filterOptions" class="me-2 ps-3 pt-1">Filtrar por fuente:</label>
             <select id="filterOptions" class="form-select w-auto" onchange="filterArticles()">
                 <option value="all">Todas las fuentes</option>
                 <option value="elperiodico.com">El Periódico</option>
-                <option value="diaridegirona.cat">Diari de Girona</option>
                 <option value="epe.es">El Periódico de España</option>
-                <option value="regio7.cat">Regió7</option>
-
-                <!-- Añade más opciones aquí según las fuentes disponibles -->
+ 
+                <!-- Añadir más según diarios o webs -->
             </select>
         </div>
+
         <div id="articleCount" class="text-center text-muted mb-4">Número total de artículos: 0</div>
-
-
 
         <!-- Sección Artículos -->
         <section id="articulos" class="mb-5">
             <div class="row">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="elperiodico.com">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <a href="https://www.elperiodico.com/es/sabadell/20241019/pasteleria-sabadell-mejores-resenas-google-dv-loc-106273323" target="_blank" class="text-decoration-none text-dark">
-                                            'Todavía sueño con ella': la pastelería de Sabadell con mejores reseñas en Google
-                                        </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 19 Octubre 2024</h6>
-                                    <p class="card-text">La pastelería Nuvols i Petits Tresors ha logrado consagrarse como la mejor de Sabadell en Google. Sus icónicas tartas de queso, galletas y pasteles personalizados le han permitido alejarse de la competencia y convertirse en la favorita de sus clientes.</p>
-                                    <a href="https://www.elperiodico.com/es/sabadell/20241019/pasteleria-sabadell-mejores-resenas-google-dv-loc-106273323" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="elperiodico.com">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <a href="https://www.elperiodico.com/es/terrassa/20241012/pasteles-terrassa-mejores-resenas-google-dv-loc-106226859" target="_blank" class="text-decoration-none text-dark">
-                                            'Cruasanes muy originales': la pastelería de Terrassa con mejores reseñas según Google
-                                        </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 12 Octubre 2024</h6>
-                                    <p class="card-text">La amplia oferta de deliciosos postres y dulces que ofrece la pastelería La Xicra de Terrassa la convierten en un emblema vallesano. Las reseñas en Google así lo constatan, con la mayor puntuación sobre la base de un gran número de comentarios.</p>
-                                    <a href="https://www.elperiodico.com/es/terrassa/20241012/pasteles-terrassa-mejores-resenas-google-dv-loc-106226859" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
                         <div class="col-md-6 mb-4">
                             <div class="card shadow-sm article-card"data-source="elperiodico.com">
                                 <div class="card-body">
@@ -177,34 +144,6 @@
                             <div class="card shadow-sm article-card" data-source="elperiodico.com">
                                 <div class="card-body">
                                     <h5 class="card-title">
-                                        <a href="https://www.elperiodico.cat/ca/oci-i-cultura/20240918/barcelona-homenatja-els-50-anys-108299674" target="_blank" class="text-decoration-none text-dark">
-                                            Barcelona homenatja els 50 anys de Zeleste i l’Ona Laietana
-                                        </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 18 Septiembre 2024</h6>
-                                    <p class="card-text">La Mercè 2024 acollirà un homenatge a la trajectòria de la icònica sala de concerts Zeleste, ubicada al carrer de l’Argenteria, abans de mudar-se a Almogàvers i convertir-se en Razzmatazz.</p>
-                                    <a href="https://www.elperiodico.cat/ca/oci-i-cultura/20240918/barcelona-homenatja-els-50-anys-108299674" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="elperiodico.com">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <a href="https://www.elperiodico.cat/ca/barcelona/20240918/parc-trinitat-acull-els-paisatges-108298038" target="_blank" class="text-decoration-none text-dark">
-                                            El parc de la Trinitat acull els ‘Paisatges cúbics’
-                                        </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 18 Septiembre 2024</h6>
-                                    <p class="card-text">El parc de la Trinitat acoge temporalmente la exposición 'Paisatges cúbics', un proyecto de arte urbano en cuatro cubos de tres metros que une artistas de Casablanca y Barcelona.</p>
-                                    <a href="https://www.elperiodico.cat/ca/barcelona/20240918/parc-trinitat-acull-els-paisatges-108298038" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="elperiodico.com">
-                                <div class="card-body">
-                                    <h5 class="card-title">
                                         <a href="https://www.elperiodico.com/es/barcelona/20240918/barcelona-50-anos-sala-zeleste-concierto-merce-2024-108281477" target="_blank" class="text-decoration-none text-dark">
                                             Barcelona homenajea los 50 años de la sala Zeleste
                                         </a>
@@ -240,20 +179,6 @@
                                     <h6 class="card-subtitle mb-2 text-muted">Publicado: 18 Septiembre 2024</h6>
                                     <p class="card-text">El Piromusical, como cada año, será el broche de oro de la Mercè 2024, con fuegos artificiales sincronizados con la música, esta vez seleccionada por Rosalía.</p>
                                     <a href="https://www.elperiodico.com/es/barcelona/20240918/piromusical-la-merce-2024-cuando-como-dia-hora-107965984" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="elperiodico.com">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <a href="https://www.elperiodico.cat/ca/barcelona/20240917/piromusical-sonara-gust-rosalia-108261494" target="_blank" class="text-decoration-none text-dark">
-                                            El piromusical sonarà a gust de Rosalía
-                                        </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 17 Septiembre 2024</h6>
-                                    <p class="card-text">Como cada año, el piromusical de la Mercè 2024 será un espectáculo visual y auditivo. Rosalía ha seleccionado la música que acompañará el show pirotécnico.</p>
-                                    <a href="https://www.elperiodico.cat/ca/barcelona/20240917/piromusical-sonara-gust-rosalia-108261494" target="_blank" class="btn btn-outline-secondary">Leer más</a>
                                 </div>
                             </div>
                         </div>
@@ -331,20 +256,6 @@
                             <div class="card shadow-sm article-card" data-source="elperiodico.com">
                                 <div class="card-body">
                                     <h5 class="card-title">
-                                        <a href="https://www.elperiodico.cat/ca/barcelona/20240905/alfombra-vermella-amb-veins-torre-107762489" target="_blank" class="text-decoration-none text-dark">
-                                            Alfombra vermella amb veïns de Torre Baró a la preestrena d’‘El 47’
-                                        </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 5 Septiembre 2024</h6>
-                                    <p class="card-text">Expectació màxima per veure el resultat d’un rodatge d’altura, als pendents del barri de Torre Baró, allà on comença o acaba la ciutat.</p>
-                                    <a href="https://www.elperiodico.cat/ca/barcelona/20240905/alfombra-vermella-amb-veins-torre-107762489" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="elperiodico.com">
-                                <div class="card-body">
-                                    <h5 class="card-title">
                                         <a href="https://www.elperiodico.com/es/barcelona/20240904/alfombra-roja-vips-preestreno-pelicula-el-47-secuestro-bus-barcelona-107727379" target="_blank" class="text-decoration-none text-dark">
                                             Alfombra roja y muchos VIPs: el glamuroso preestreno de la película sobre el ‘secuestro’ de un bus en Barcelona
                                         </a>
@@ -359,20 +270,6 @@
                             <div class="card shadow-sm article-card" data-source="elperiodico.com">
                                 <div class="card-body">
                                     <h5 class="card-title">
-                                        <a href="https://www.elperiodico.cat/ca/barcelona/20240903/bcn-estrena-nova-formula-construccio-prefabricada" target="_blank" class="text-decoration-none text-dark">
-                                            BCN estrena una nova fórmula de construcció prefabricada
-                                        </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 3 Septiembre 2024</h6>
-                                    <p class="card-text">Barcelona entregarà aquest octubre les claus de 151 pisos públics repartits en quatre blocs d’habitatges prefabricats, una fórmula més ràpida i ecològica.</p>
-                                    <a href="https://www.elperiodico.cat/ca/barcelona/20240903/bcn-estrena-nova-formula-construccio-prefabricada" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="elperiodico.com">
-                                <div class="card-body">
-                                    <h5 class="card-title">
                                         <a href="https://www.elperiodico.com/es/barcelona/20240903/barcelona-nueva-formula-construccion-industrializada-pisos-publicos-107695000" target="_blank" class="text-decoration-none text-dark">
                                             Barcelona estrena una nueva fórmula de construcción industrializada con cuatro bloques de pisos en Sant Martí
                                         </a>
@@ -380,20 +277,6 @@
                                     <h6 class="card-subtitle mb-2 text-muted">Publicado: 3 Septiembre 2024</h6>
                                     <p class="card-text">Barcelona ha puesto a prueba una nueva fórmula de producción industrializada más rápida y ecológica en la construcción de cuatro bloques de pisos prefabricados.</p>
                                     <a href="https://www.elperiodico.com/es/barcelona/20240903/barcelona-nueva-formula-construccion-industrializada-pisos-publicos-107695000" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="elperiodico.com">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <a href="https://www.elperiodico.cat/ca/barcelona/20240831/les-atraccions-les-festes-sants-107568922" target="_blank" class="text-decoration-none text-dark">
-                                            Les atraccions de les festes de Sants esgoten els seus nous veïns
-                                        </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 31 Agosto 2024</h6>
-                                    <p class="card-text">La nova localització de la fira d’atraccions a les festes de Sants ha generat malestar entre alguns veïns pel soroll generat just davant de casa seva.</p>
-                                    <a href="https://www.elperiodico.cat/ca/barcelona/20240831/les-atraccions-les-festes-sants-107568922" target="_blank" class="btn btn-outline-secondary">Leer más</a>
                                 </div>
                             </div>
                         </div>
@@ -445,38 +328,6 @@
                             <div class="card shadow-sm article-card" data-source="elperiodico.com">
                                 <div class="card-body">
                                     <h5 class="card-title">
-                                        <a href="https://www.elperiodico.cat/ca/barcelona/20240824/aina-puerto-cultura-popular-les-107304436" target="_blank" class="text-decoration-none text-dark">
-                                            Aina Puerto: "La cultura popular a les festes de Sants està garantida"
-                                        </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 23 Agosto 2024</h6>
-                                    <p class="card-text">
-                                        Com serà aquesta edició de la festa major de Sants i quines novetats porta?
-                                    </p>
-                                    <a href="https://www.elperiodico.cat/ca/barcelona/20240824/aina-puerto-cultura-popular-les-107304436" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="elperiodico.com">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <a href="https://www.elperiodico.com/es/santa-coloma/20240822/mejor-pasteleria-rumana-santa-coloma-google-dv-loc-107209626" target="_blank" class="text-decoration-none text-dark">
-                                            Repostería rumana para chuparse los dedos: la pastelería de Santa Coloma con mejores reseñas según Google
-                                        </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 22 Agosto 2024</h6>
-                                    <p class="card-text">
-                                        Los dulces típicos de Rumanía se han popularizado en Santa Coloma de Gramenet gracias a una pastelería que, en poco más de un año, ha conquistado el corazón de los colomenses.
-                                    </p>
-                                    <a href="https://www.elperiodico.com/es/santa-coloma/20240822/mejor-pasteleria-rumana-santa-coloma-google-dv-loc-107209626" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="elperiodico.com">
-                                <div class="card-body">
-                                    <h5 class="card-title">
                                         <a href="https://www.elperiodico.com/es/tarragona/20240822/postres-argentina-pasteleria-reus-google-dv-loc-107203435" target="_blank" class="text-decoration-none text-dark">
                                             Postres para viajar a Argentina: la pastelería de Reus con mejores reseñas según Google
                                         </a>
@@ -493,22 +344,6 @@
                             <div class="card shadow-sm article-card" data-source="elperiodico.com">
                                 <div class="card-body">
                                     <h5 class="card-title">
-                                        <a href="https://www.elperiodico.cat/ca/barcelona/20240821/l-estrategia-guanyadora-mozart-107193000" target="_blank" class="text-decoration-none text-dark">
-                                            L’estratègia guanyadora de Mozart
-                                        </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 20 Agosto 2024</h6>
-                                    <p class="card-text">
-                                        El carrer de Mozart, rebatejat com a MozartZaki, va ser triat com el més ben decorat de la Festa Major de Gràcia després de més de dues dècades d’espera.
-                                    </p>
-                                    <a href="https://www.elperiodico.cat/ca/barcelona/20240821/l-estrategia-guanyadora-mozart-107193000" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="elperiodico.com">
-                                <div class="card-body">
-                                    <h5 class="card-title">
                                         <a href="https://www.elperiodico.com/es/barcelona/20240820/secretos-exito-calle-ganado-fiestas-gracia-2024-mozart-107185315" target="_blank" class="text-decoration-none text-dark">
                                             Los dos secretos del éxito de la calle que ha ganado las fiestas de Gràcia 2024
                                         </a>
@@ -518,22 +353,6 @@
                                         La calle Mozart, renombrada como MozartZaki, fue elegida la mejor decorada de la Fiesta Mayor de Gràcia. ¿Cuáles son los secretos del éxito en esta edición?
                                     </p>
                                     <a href="https://www.elperiodico.com/es/barcelona/20240820/secretos-exito-calle-ganado-fiestas-gracia-2024-mozart-107185315" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="elperiodico.com">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <a href="https://www.elperiodico.cat/ca/societat/20240810/les-platges-barcelona-son-gran-106831463" target="_blank" class="text-decoration-none text-dark">
-                                            Les platges de Barcelona són un gran dormitori a la fresca
-                                        </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 9 Agosto 2024</h6>
-                                    <p class="card-text">
-                                        Les platges de Barcelona es transformen durant les nits d’agost en dormitoris informals, amb alta afluència de barcelonins i turistes buscant refugio de la calor.
-                                    </p>
-                                    <a href="https://www.elperiodico.cat/ca/societat/20240810/les-platges-barcelona-son-gran-106831463" target="_blank" class="btn btn-outline-secondary">Leer más</a>
                                 </div>
                             </div>
                         </div>
@@ -571,34 +390,6 @@
                             <div class="card shadow-sm article-card" data-source="elperiodico.com">
                                 <div class="card-body">
                                     <h5 class="card-title">
-                                    <a href="https://www.elperiodico.cat/ca/barcelona/20240806/redisseny-d-zona-joc-infantil-106667853" target="_blank" class="text-decoration-none text-dark">
-                                        El redisseny d’una zona de joc infantil no convenç els veïns
-                                    </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 6 Agosto 2024</h6>
-                                    <p class="card-text">La nova àrea de joc infantil al parc de l’Espanya Industrial ha generat divisió d’opinions entre els pares i veïns del barri.</p>
-                                    <a href="https://www.elperiodico.cat/ca/barcelona/20240806/redisseny-d-zona-joc-infantil-106667853" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>                        
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="elperiodico.com">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                    <a href="https://www.elperiodico.com/es/tarragona/20240805/pasteles-tarragona-veganos-postres-resenas-google-dv-loc-106582268" target="_blank" class="text-decoration-none text-dark">
-                                        Deliciosos pasteles veganos y postres sin gluten: la pastelería de Tarragona con mejores reseñas en Google
-                                    </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 5 Agosto 2024</h6>
-                                    <p class="card-text">La Veggiesseria en Tarragona ofrece productos 100% de origen vegetal, altamente valorados en reseñas de Google.</p>
-                                    <a href="https://www.elperiodico.com/es/tarragona/20240805/pasteles-tarragona-veganos-postres-resenas-google-dv-loc-106582268" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>                        
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="elperiodico.com">
-                                <div class="card-body">
-                                    <h5 class="card-title">
                                     <a href="https://www.elperiodico.com/es/eixample/20240805/supermercado-24h-antigua-conselleria-economia-modernista-barcelona-106586470" target="_blank" class="text-decoration-none text-dark">
                                         Un súper 24h en la antigua conselleria de Economia extiende el 'boom' de colmados en el corazón del Eixample
                                     </a>
@@ -608,63 +399,7 @@
                                     <a href="https://www.elperiodico.com/es/eixample/20240805/supermercado-24h-antigua-conselleria-economia-modernista-barcelona-106586470" target="_blank" class="btn btn-outline-secondary">Leer más</a>
                                 </div>
                             </div>
-                        </div>                        
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="elperiodico.com">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                    <a href="https://www.elperiodico.com/es/sabadell/20240730/pasteleria-sabadell-mejores-resenas-google-dv-loc-106273323" target="_blank" class="text-decoration-none text-dark">
-                                        Un dulce estrella y casi un siglo de historia: la pastelería de Sabadell con mejores reseñas en Google
-                                    </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 30 Julio 2024</h6>
-                                    <p class="card-text">La pastelería Genescà en Sabadell ha mantenido una excelente reputación en Google desde su apertura en 1928.</p>
-                                    <a href="https://www.elperiodico.com/es/sabadell/20240730/pasteleria-sabadell-mejores-resenas-google-dv-loc-106273323" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>                        
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="elperiodico.com">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                    <a href="https://www.elperiodico.com/es/mataro/20240730/pasteleria-mataro-mejores-resenas-google-dv-loc-106271029" target="_blank" class="text-decoration-none text-dark">
-                                        Dulces singulares y turrones artísticos: la pastelería de Mataró con mejores reseñas en Google
-                                    </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 30 Julio 2024</h6>
-                                    <p class="card-text">La pastelería Uñó en Mataró destaca por sus productos únicos y una historia de calidad desde 1967.</p>
-                                    <a href="https://www.elperiodico.com/es/mataro/20240730/pasteleria-mataro-mejores-resenas-google-dv-loc-106271029" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="elperiodico.com">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                    <a href="https://www.elperiodico.com/es/terrassa/20240729/pasteles-terrassa-mejores-resenas-google-dv-loc-106226859" target="_blank" class="text-decoration-none text-dark">
-                                        Pasteles para chuparse los dedos: la pastelería de Terrassa con mejores reseñas según Google
-                                    </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 29 Julio 2024</h6>
-                                    <p class="card-text">La amplia oferta de deliciosos postres y dulces que ofrece la pastelería La Xicra en Terrassa la convierten en un emblema vallesano, altamente valorada en Google por su calidad.</p>
-                                    <a href="https://www.elperiodico.com/es/terrassa/20240729/pasteles-terrassa-mejores-resenas-google-dv-loc-106226859" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>                        
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="elperiodico.com">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                    <a href="https://www.elperiodico.cat/ca/barcelona/20240728/rescatats-brossa-dibuixos-d-artista-106175572" target="_blank" class="text-decoration-none text-dark">
-                                        Rescatats de la brossa dibuixos d’un artista modernista
-                                    </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 28 Julio 2024</h6>
-                                    <p class="card-text">Nou cas de patrimoni artístic i històric a Barcelona que acaba a les escombraries, amb peces d’art modernistes llençades pel desconeixement del seu valor.</p>
-                                    <a href="https://www.elperiodico.cat/ca/barcelona/20240728/rescatats-brossa-dibuixos-d-artista-106175572" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>                        
+                        </div>                    
                         <div class="col-md-6 mb-4">
                             <div class="card shadow-sm article-card" data-source="elperiodico.com">
                                 <div class="card-body">
@@ -795,20 +530,6 @@
                             <div class="card shadow-sm article-card" data-source="elperiodico.com">
                                 <div class="card-body">
                                     <h5 class="card-title">
-                                        <a href="https://www.elperiodico.com/es/cata-mayor/20240717/patatas-bravas-bar-le-petit-eixample-barcelona-dv-lov-105751364" target="_blank" class="text-decoration-none text-dark">
-                                            "Simplemente espectaculares": el bar de Barcelona aclamado por sus patatas bravas
-                                        </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 17 Julio 2024</h6>
-                                    <p class="card-text">Las patatas bravas de Le Petit, en el barrio de l’Esquerra de l’Eixample, son aclamadas por su innovador sabor y calidad.</p>
-                                    <a href="https://www.elperiodico.com/es/cata-mayor/20240717/patatas-bravas-bar-le-petit-eixample-barcelona-dv-lov-105751364" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4"> 
-                            <div class="card shadow-sm article-card" data-source="elperiodico.com">
-                                <div class="card-body">
-                                    <h5 class="card-title">
                                         <a href="https://www.elperiodico.com/es/barcelona/20240716/port-olimpic-barcelona-fiesta-reapertura-dv-105705541" target="_blank" class="text-decoration-none text-dark">
                                             Así será la fiesta gratis para celebrar la reapertura del nuevo Port Olímpic de Barcelona
                                         </a>
@@ -816,20 +537,6 @@
                                     <h6 class="card-subtitle mb-2 text-muted">Publicado: 16 Julio 2024</h6>
                                     <p class="card-text">El nuevo Port Olímpic de Barcelona reabrirá con una fiesta llena de actividades, talleres y conciertos el próximo domingo.</p>
                                     <a href="https://www.elperiodico.com/es/barcelona/20240716/port-olimpic-barcelona-fiesta-reapertura-dv-105705541" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4"> 
-                            <div class="card shadow-sm article-card" data-source="elperiodico.com">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <a href="https://www.elperiodico.com/es/cata-mayor/20240715/hospitalet-mejores-restaurantes-tripadvisor-dv-loc-105662093" target="_blank" class="text-decoration-none text-dark">
-                                            Los cinco mejores restaurantes para comer en l'Hospitalet de Llobregat, según Tripadvisor
-                                        </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 15 Julio 2024</h6>
-                                    <p class="card-text">L'Hospitalet de Llobregat ofrece una selección de restaurantes de calidad, recomendados por Tripadvisor para todos los gustos y presupuestos.</p>
-                                    <a href="https://www.elperiodico.com/es/cata-mayor/20240715/hospitalet-mejores-restaurantes-tripadvisor-dv-loc-105662093" target="_blank" class="btn btn-outline-secondary">Leer más</a>
                                 </div>
                             </div>
                         </div>
@@ -844,104 +551,6 @@
                                     <h6 class="card-subtitle mb-2 text-muted">Publicado: 7 Julio 2024</h6>
                                     <p class="card-text">El estreno del nuevo espectáculo del Circo del Sol, “Sublim”, congregó anoche a más de 3500 personas en Andorra. Este show, disponible hasta el 4 de agosto, es una oda al lujo y a la alta costura, mezclando acrobacias y ópera en una puesta en escena única.</p>
                                     <a href="https://www.elperiodico.com/es/ocio-y-cultura/20240707/circo-sol-estrena-sublim-oda-105260104" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="regio7.cat">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <a href="https://www.regio7.cat/on-catalunya/que-fer/2024/07/07/reobre-mirador-mes-alt-bcn-105060344.html" target="_blank" class="text-decoration-none text-dark">
-                                            Reobre el mirador més alt de BCN
-                                        </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 7 Julio 2024</h6>
-                                    <p class="card-text">El mirador de la torre de Collserola de Barcelona reabre este julio, ofreciendo vistas emblemáticas después de haber estado cerrado desde la pandemia.</p>
-                                    <a href="https://www.regio7.cat/on-catalunya/que-fer/2024/07/07/reobre-mirador-mes-alt-bcn-105060344.html" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="regio7.cat">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <a href="https://www.regio7.cat/on-catalunya/que-fer/2024/07/05/local-ofereix-concerts-d-alta-105060264.html" target="_blank" class="text-decoration-none text-dark">
-                                            Un local ofereix concerts d’alta fidelitat a cegues
-                                        </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 5 Julio 2024</h6>
-                                    <p class="card-text">El estudio Bridge_48 en Poblenou presenta audiciones sensoriales en completa oscuridad para 16 espectadores, ofreciendo una experiencia íntima y única.</p>
-                                    <a href="https://www.regio7.cat/on-catalunya/que-fer/2024/07/05/local-ofereix-concerts-d-alta-105060264.html" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="elperiodico.com">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <a href="https://www.elperiodico.cat/ca/barcelona/20240704/tornare-agafar-abans-s-ompli-105063534" target="_blank" class="text-decoration-none text-dark">
-                                            "Tornaré a agafar-lo abans que s’ompli de turistes"
-                                        </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 4 Julio 2024</h6>
-                                    <p class="card-text">El bus nàutic del Port Vell de Barcelona ha abierto sus puertas con gran afluencia local, especialmente entre jubilados interesados en este nuevo medio de transporte.</p>
-                                    <a href="https://www.elperiodico.cat/ca/barcelona/20240704/tornare-agafar-abans-s-ompli-105063534" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="diaridegirona.cat">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <a href="https://www.diaridegirona.cat/on-catalunya/2024/07/04/reobre-mirador-mes-alt-bcn-105060343.html" target="_blank" class="text-decoration-none text-dark">
-                                            Reobre el mirador més alt de BCN
-                                        </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 4 Julio 2024</h6>
-                                    <p class="card-text">La torre de Collserola de Barcelona reabre sus puertas en julio tras la pandemia, siendo parte de la World Federation of Great Towers.</p>
-                                    <a href="https://www.diaridegirona.cat/on-catalunya/2024/07/04/reobre-mirador-mes-alt-bcn-105060343.html" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="diaridegirona.cat">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <a href="https://www.diaridegirona.cat/on-catalunya/2024/07/04/local-ofereix-concerts-d-alta-105060263.html" target="_blank" class="text-decoration-none text-dark">
-                                            Un local ofereix concerts d’alta fidelitat a cegues
-                                        </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 4 Julio 2024</h6>
-                                    <p class="card-text">El cicle Astral - Música a cegues invita a desconectar a través de una experiencia sensorial en completa oscuridad en Bridge_48, Poblenou.</p>
-                                    <a href="https://www.diaridegirona.cat/on-catalunya/2024/07/04/local-ofereix-concerts-d-alta-105060263.html" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="elperiodico.com">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <a href="https://www.elperiodico.cat/ca/que-fer/20240704/reobre-mirador-mes-alt-bcn-105060170" target="_blank" class="text-decoration-none text-dark">
-                                            Reobre el mirador més alt de BCN
-                                        </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 4 Julio 2024</h6>
-                                    <p class="card-text">El mirador de la torre de Collserola de Barcelona vuelve a abrir sus puertas tras la pandemia, sumándose a la World Federation of Great Towers.</p>
-                                    <a href="https://www.elperiodico.cat/ca/que-fer/20240704/reobre-mirador-mes-alt-bcn-105060170" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="elperiodico.com">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <a href="https://www.elperiodico.cat/ca/que-fer/20240704/local-ofereix-concerts-d-alta-105060169" target="_blank" class="text-decoration-none text-dark">
-                                            Un local ofereix concerts d’alta fidelitat a cegues
-                                        </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 4 Julio 2024</h6>
-                                    <p class="card-text">El estudio Bridge_48 en Poblenou ofrece la experiencia Astral Música a Ciegas, una audición sensorial en completa oscuridad.</p>
-                                    <a href="https://www.elperiodico.cat/ca/que-fer/20240704/local-ofereix-concerts-d-alta-105060169" target="_blank" class="btn btn-outline-secondary">Leer más</a>
                                 </div>
                             </div>
                         </div>
@@ -1012,20 +621,6 @@
                                     <h6 class="card-subtitle mb-2 text-muted">Publicado: 23 Junio 2024</h6>
                                     <p class="card-text">La ciudad de Barcelona se prepara para la verbena de Sant Joan con múltiples actividades en distintos barrios para celebrar la mágica noche del solsticio de verano.</p>
                                     <a href="https://www.elperiodico.com/es/barcelona/20240623/mapa-verbenas-sant-joan-2024-barcelona-hogueras-103898905" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="elperiodico.com">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <a href="https://www.elperiodico.cat/ca/barcelona/20240622/perillosa-odissea-d-arribar-colle-104162674" target="_blank" class="text-decoration-none text-dark">
-                                            La perillosa odissea d’arribar al col·le
-                                        </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 22 Junio 2024</h6>
-                                    <p class="card-text">El carrer de Parellada al barri de Sant Andreu s’ha convertit en un “infern” per a les famílies que el creuen cada matí per portar els nens a l’escola FEDAC.</p>
-                                    <a href="https://www.elperiodico.cat/ca/barcelona/20240622/perillosa-odissea-d-arribar-colle-104162674" target="_blank" class="btn btn-outline-secondary">Leer más</a>
                                 </div>
                             </div>
                         </div>
@@ -1173,20 +768,6 @@
                             <div class="card shadow-sm article-card" data-source="elperiodico.com">
                                 <div class="card-body">
                                     <h5 class="card-title">
-                                        <a href="https://www.elperiodico.cat/ca/barcelona/20240105/els-gegants-ciutat-reestrenen-seu-96552046" target="_blank" class="text-decoration-none text-dark">
-                                            Els Gegants de la Ciutat reestrenen el seu vestuari olímpic
-                                        </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 5 Enero 2024</h6>
-                                    <p class="card-text">Els Gegants de la Ciutat de Barcelona recuperan su vestuario emblemático de 1992 para recibir a los Reyes Mags este 5 de enero.</p>
-                                    <a href="https://www.elperiodico.cat/ca/barcelona/20240105/els-gegants-ciutat-reestrenen-seu-96552046" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="elperiodico.com">
-                                <div class="card-body">
-                                    <h5 class="card-title">
                                         <a href="https://www.elperiodico.com/es/barcelona/20240103/cabalgata-reyes-magos-barcelona-2024-nuevas-carrozas-extraterrestres-96497903" target="_blank" class="text-decoration-none text-dark">
                                             Así son las carrozas y los 'extraterrestres' que estrena la cabalgata de Barcelona 2024
                                         </a>
@@ -1236,20 +817,6 @@
                                     <h6 class="card-subtitle mb-2 text-muted">Publicado: 29 Diciembre 2023</h6>
                                     <p class="card-text">Francesc Porret, destacado líder vecinal y expresidente de la Asociación de Vecinos de Sant Andreu de Palomar, falleció en Barcelona a los 94 años.</p>
                                     <a href="https://www.elperiodico.com/es/barcelona/20231229/francesc-porret-sant-andreu-fallecido-referente-asociacion-de-vecinos-de-sant-andreu-de-palomar-medalla-de-honor-barcelona-96360525" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="regio7.cat">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <a href="https://www.regio7.cat/oci/agenda/2023/12/29/les-millors-fotografies-drets-humans-96355243.html" target="_blank" class="text-decoration-none text-dark">
-                                            Les millors fotografies sobre drets humans ocupen Barcelona
-                                        </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 29 Diciembre 2023</h6>
-                                    <p class="card-text">Una muestra de fotografías sobre derechos humanos se puede visitar en las calles de Barcelona hasta el 10 de enero, como parte del III Festival Internacional de Fotografía.</p>
-                                    <a href="https://www.regio7.cat/oci/agenda/2023/12/29/les-millors-fotografies-drets-humans-96355243.html" target="_blank" class="btn btn-outline-secondary">Leer más</a>
                                 </div>
                             </div>
                         </div>
@@ -1309,39 +876,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="elperiodico.com">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <a href="https://www.elperiodico.com/es/temas/fiestas-sants-barcelona-1883702" target="_blank" class="text-decoration-none text-dark">
-                                            Fiestas de Sants
-                                        </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 15 Agosto 2023</h6>
-                                    <p class="card-text">Descubre todo sobre las Fiestas de Sants en Barcelona y su ambiente festivo único.</p>
-                                    <a href="https://www.elperiodico.com/es/temas/fiestas-sants-barcelona-1883702" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card shadow-sm article-card" data-source="elperiodico.com">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <a href="https://www.elperiodico.com/es/temas/la-merce-10510" target="_blank" class="text-decoration-none text-dark">
-                                            Todo sobre las fiestas de Barcelona
-                                        </a>
-                                    </h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Publicado: 21 Noviembre 2020</h6>
-                                    <p class="card-text">Información completa sobre las fiestas de Barcelona, incluyendo La Mercè y otros eventos destacados.</p>
-                                    <a href="https://www.elperiodico.com/es/temas/la-merce-10510" target="_blank" class="btn btn-outline-secondary">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
         </section>
-
-
         
     </main>
 
